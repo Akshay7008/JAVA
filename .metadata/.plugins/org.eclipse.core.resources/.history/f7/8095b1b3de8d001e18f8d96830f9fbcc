@@ -1,0 +1,12 @@
+package BL;
+
+public class client {
+
+	public static void main(String[] args) {
+	
+		Bank_Locker b1=new Bank_Locker("Smith", 50000);
+		System.out.println(b1);
+
+	}
+
+}

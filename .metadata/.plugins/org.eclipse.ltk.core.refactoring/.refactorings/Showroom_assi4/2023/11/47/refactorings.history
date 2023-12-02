@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;BL.colour&apos; to &apos;color&apos;&#x0D;&#x0A;- Original project: &apos;Showroom_assi4&apos;&#x0D;&#x0A;- Original element: &apos;BL.colour&apos;&#x0D;&#x0A;- Renamed element: &apos;BL.color&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;colour&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;BL{colour.java[colour" matchStrategy="1" name="color" qualified="false" references="true" similarDeclarations="false" stamp="1700908554015" textual="false" version="1.0"/>
+</session>

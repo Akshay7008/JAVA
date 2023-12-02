@@ -1,0 +1,12 @@
+package BL;
+
+public class tester_validation {
+
+	public static void main(String[] args) {
+		
+		Customer_Validation v1=new Customer_Validation();
+		System.out.println(v1);
+
+	}
+
+}

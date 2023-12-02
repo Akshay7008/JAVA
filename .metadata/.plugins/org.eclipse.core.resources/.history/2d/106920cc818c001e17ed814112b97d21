@@ -1,0 +1,26 @@
+package tester_inertance;
+
+import BL.Manager;
+import BL.Worker;
+
+public class tester1 {
+
+	public static void main(String[] args) {
+			
+		
+//		Manager m1=new Manager("SMITH", 25000, 20, 25000);
+//		System.out.println(m1);
+//		System.out.println(m1.netsal());
+		
+		Worker w1=new Worker("JON", 15000, 9, 1000);
+		System.out.println(w1);
+		System.out.println(w1.netsal());
+		
+		System.out.println(w1.hashCode());
+		
+		
+	
+
+	}
+
+}

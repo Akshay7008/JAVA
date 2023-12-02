@@ -1,0 +1,28 @@
+package com.client;
+
+import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.code.Product;
+import com.code.utilproduct;
+
+public class testerAPI {
+
+	public static void main(String[] args) throws ParseException {
+		
+		List<Product> shop=new ArrayList<Product>();
+		shop=utilproduct.getproducts();
+		
+		for(Product l:shop)
+			System.out.println(l);
+		
+		shop.forEach(no->System.out.println(no));
+		
+		System.out.println("---------------------------");
+		
+		shop.stream()
+		.filter(s->s.)
+	}
+
+}

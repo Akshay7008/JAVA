@@ -1,0 +1,52 @@
+package com.client;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.code.Product;
+import com.code.utilproduct;
+
+public class testerproduct {
+
+	public static void main(String[] args) {
+
+		try {
+			List<Product> shop = new ArrayList<Product>();
+			shop = utilproduct.getproducts();
+
+			int choice;
+			Scanner s = new Scanner(System.in);
+
+			do {
+				System.out.println("Enter the choice");
+				choice = s.nextInt();
+				System.out.println("1.display all products");
+				System.out.println("2.Add products");
+				System.out.println("3.display only products of spectfic category");
+				System.out.println("4.display all products price");
+				System.out.println("5.display all product price >200");
+				System.out.println("6.Sum of all products");
+
+				switch (choice) {
+				case 1:
+					shop.forEach(a -> System.out.println(a));
+
+					break;
+				case 2:
+					shop.add(new Product(s.nextInt(), s.next(), s.nextDouble(), s.next(), s.next()));
+					break;
+
+				case 3:
+
+				}
+
+			} while (choice <= 6);
+
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+		}
+
+	}
+
+}

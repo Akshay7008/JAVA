@@ -1,0 +1,32 @@
+package BL;
+
+public class Employee_static {
+
+	private String name, email;
+	private static int empid;
+//	private int id;
+	private static String cname;
+
+	static {
+		cname = "Laxmi cheat fund";
+		empid = 100;
+	}
+
+	public Employee_static() {
+		name = "A1";
+		email = "a1@cname";
+		empid = empid++;
+	}
+
+	public Employee_static(String name, String email) {
+
+		this.name = name;
+		this.email = email;
+		empid= empid++;
+	}
+
+	public String toString() {
+		return "empid=" + empid + " " + "Name=" + name + "  " + "email " + email+" "+"company name "+cname;
+	}
+
+}

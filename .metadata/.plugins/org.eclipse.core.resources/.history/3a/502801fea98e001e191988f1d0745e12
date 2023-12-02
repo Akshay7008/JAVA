@@ -1,0 +1,11 @@
+package BL;
+
+public class New {
+	
+	public  Car newcar(String name, color color_car, double price) 
+	{
+		return ;
+		
+	}
+
+}

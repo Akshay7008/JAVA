@@ -1,0 +1,14 @@
+package com.gen;
+
+public class Generic2 <T>{
+	
+	private T a;
+	private T b;
+	
+	public T add(T a ,T b)
+	{
+		T c=(Integer)a+(Integer)b;
+		return c;
+	}
+
+}

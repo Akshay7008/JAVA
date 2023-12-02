@@ -1,0 +1,28 @@
+package com.gen;
+
+public class Generic2 <T extends Number>{
+	
+	private T a;
+	private T b;
+	
+	public Generic2(T a, T b) {
+		super();
+		this.a = a;
+		this.b = b;
+	}
+
+	public T add()
+	{
+		if(a instanceof Integer)
+		{
+			 return (T) (Integer) (a.intValue() + b.intValue());  
+		}
+		else if(a instanceof Double)
+		{
+			return (T) (Double) (a.doubleValue() + b.doubleValue()); 
+		}
+		return null;
+		
+	}
+
+}

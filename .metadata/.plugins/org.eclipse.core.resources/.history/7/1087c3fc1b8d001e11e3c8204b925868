@@ -1,0 +1,11 @@
+
+public class Tester_clas {
+
+	public static void main(String[] args) {
+		
+		square s1=new square(5);
+		s1.area();
+
+	}
+
+}

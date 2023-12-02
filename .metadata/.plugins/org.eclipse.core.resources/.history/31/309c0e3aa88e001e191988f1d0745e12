@@ -1,0 +1,22 @@
+package com.gen;
+
+public class Tester_gen {
+
+	public static void main(String[] args) {
+		
+		Genric<Integer> obj=new Genric<Integer>(10);
+		System.out.println(obj);
+		
+		Genric<String> obj1=new Genric<String>("JAVA");
+		System.out.println(obj1);
+		
+		Generic2<Integer> o=new Generic2<T>(10,20);
+		
+		Integer c=o.add(i1, i2);
+		obj.setVar1(20);
+		
+		
+
+	}
+
+}

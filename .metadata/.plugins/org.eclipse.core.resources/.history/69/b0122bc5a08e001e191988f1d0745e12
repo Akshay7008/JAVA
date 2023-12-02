@@ -1,0 +1,19 @@
+package com.gen;
+
+public class Genric <T> {
+
+	private T var1;
+	
+	public Genric (T var1, T var2)
+	{
+		this.var1=var1;
+		this.var2=var2;
+	}
+	
+	public void Generic (T a,T b)
+
+	{
+		
+		System.out.println(var1);
+	}
+}

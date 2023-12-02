@@ -1,0 +1,33 @@
+package com.validation;
+
+import com.code.Customer;
+
+public class Customervalidation {
+
+	private static boolean isvalidname(String name) throws custexception {
+		if (name.toLowerCase().contains("a") && name.length() >= 5)
+			return true;
+		else
+			throw new custexception("Invalid Name");
+
+	}
+
+	public static Customer createcustomer (String fname, String lname, String email, double salary)
+	{
+		try {
+			if (isvalidname(fname))
+			{
+				Customer c1=new Customer(fname, lname, email, salary);
+				return c1;		
+			}
+		} catch (custexception e) 
+		{
+			System.err.println(e.getMessage());
+			e.printStackTrace();
+		}
+		return null;
+			
+			
+	}
+
+}

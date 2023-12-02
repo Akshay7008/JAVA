@@ -1,0 +1,18 @@
+package Interface;
+
+public class triangle extends Shape implements printable {
+
+	@Override
+	public void area() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void print()
+	{
+		System.out.println("print method of printable in triangle");
+	}
+	
+	
+}

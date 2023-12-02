@@ -1,0 +1,61 @@
+package BL;
+
+public class Worker extends Employee {
+	
+	private double workshrs,ratehrs;
+
+	public Worker() {
+		super();
+		this.workshrs=6;
+		this.ratehrs=500;
+		
+	}
+
+	
+	public Worker(String name,double salary,double workshrs, double ratehrs) {
+		super(name, salary);
+		this.workshrs = workshrs;
+		this.ratehrs = ratehrs;
+	}
+	
+	@Override
+	public double netsal()
+	{
+		salary+=(workshrs*ratehrs);
+		return salary;
+	}
+
+
+	public double getWorkshrs() {
+		return workshrs;
+	}
+
+
+	public void setWorkshrs(double workshrs) {
+		this.workshrs = workshrs;
+	}
+
+
+	public double getRatehrs() {
+		return ratehrs;
+	}
+
+
+	public void setRatehrs(double ratehrs) {
+		this.ratehrs = ratehrs;
+	}
+
+
+
+
+	@Override
+	public String toString() {
+		return super.toString()+", Worker [workshrs=" + workshrs + ", ratehrs=" + ratehrs +"]";
+	}
+	
+	
+	
+	
+	
+
+}

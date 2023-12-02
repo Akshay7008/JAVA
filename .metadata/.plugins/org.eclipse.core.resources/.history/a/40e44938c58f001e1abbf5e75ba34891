@@ -1,0 +1,82 @@
+package com.code;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Product {
+	
+	private int pid;
+	private String pname;
+	private double price;
+	private Category ptype;
+	private Date mfgdate;
+	private  static SimpleDateFormat sdf;
+	
+	static
+	{
+		sdf=new SimpleDateFormat("mm/dd/yyyy");
+	}
+
+	public Product(int pid, String pname, double price, String ptype, String mfgdate) throws ParseException {
+		super();
+		this.pid = pid;
+		this.pname = pname;
+		this.price = price;
+		this.ptype = Category.valueOf(ptype);
+		this.mfgdate = sdf.parse(mfgdate);
+		
+	}
+
+	public String getPname() {
+		return pname;
+	}
+
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public String getPtype() {
+		 String x=Category.valueOf(ptype);
+		return x;
+	}
+
+	public void setPtype(String ptype) {
+		this.ptype = Category.valueOf(ptype);
+	}
+
+	public Date getMfgdate() {
+		return mfgdate;
+	}
+
+	public void setMfgdate(String mfgdate) throws ParseException {
+		this.mfgdate = sdf.parse(mfgdate);
+	}
+
+
+	public int getPid() {
+		return pid;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [pid=" + pid + ", pname=" + pname + ", price=" + price + ", ptype=" + ptype + ", mfgdate="
+				+ sdf.format(mfgdate) + "]";
+	}
+	
+	
+	
+	
+
+
+	
+	
+}

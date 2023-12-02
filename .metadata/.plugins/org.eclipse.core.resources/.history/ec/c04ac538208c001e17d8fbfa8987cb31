@@ -1,0 +1,16 @@
+package tester_inertance;
+
+import BL.Manager;
+
+public class tester1 {
+
+	public static void main(String[] args) {
+			
+		
+		Manager m1=new Manager("SMITH", 25000, 20, 25000);
+		System.out.println(m1);
+		System.out.println(m1.netsal());
+
+	}
+
+}

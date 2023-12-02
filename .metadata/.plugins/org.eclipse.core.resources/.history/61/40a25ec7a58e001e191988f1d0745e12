@@ -1,0 +1,20 @@
+package com.gen;
+
+public class Tester_gen {
+
+	public static void main(String[] args) {
+		
+		Genric<Integer> obj=new Genric<Integer>(10);
+		System.out.println(obj);
+		
+		Genric<String> obj1=new Genric<String>("JAVA");
+		System.out.println(obj1);
+		
+		
+		obj.setVar1(20);
+		
+		
+
+	}
+
+}

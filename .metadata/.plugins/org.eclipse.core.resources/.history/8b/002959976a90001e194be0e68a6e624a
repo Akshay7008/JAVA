@@ -1,0 +1,19 @@
+package com.code;
+
+import java.util.List;
+
+public class Testercust {
+
+	public static void main(String[] args) {
+		
+		
+		List<Customer> man=new utilcustomer().getcustomerdetails();
+		
+		for (Customer n1:man)
+		{
+			System.out.println(man);
+		}
+
+	}
+
+}

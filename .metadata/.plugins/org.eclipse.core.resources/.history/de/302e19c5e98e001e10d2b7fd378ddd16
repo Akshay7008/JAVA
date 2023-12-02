@@ -1,0 +1,62 @@
+package list;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+import Book_list.Bookutil;
+import Book_list.List_book;
+import Book_list.sortbyprice;
+
+public class Collection_List {
+
+	public static void main(String[] args) {
+		
+		
+		List<Integer> l1=new ArrayList<Integer>();
+		l1.add(50);
+		l1.add(40);
+		l1.add(10);
+		
+		for (int no:l1)
+		{
+			System.out.println(no);
+		}
+		
+		Collections.sort(l1);
+		
+		for (int no:l1)
+		{
+			System.out.println(no);
+		}
+		
+		
+		List<List_book> lib=new ArrayList<List_book>();
+		lib=Bookutil.getbook();
+		
+//		for(List_book bk: lib)
+//		{
+//			System.out.println(bk);
+//		}
+		
+		
+	System.out.println("Sorting on id default");	
+		Collections.sort(lib);
+		
+		for(List_book bk: lib)
+		{
+			System.out.println(bk);
+		}
+		System.out.println("--------------------");
+		System.out.println("Sorting on price");
+		
+		Collections.sort(lib, new sortbyprice());
+		for(List_book bk: lib)
+		{
+			System.out.println(bk);
+		}
+
+	}
+
+}

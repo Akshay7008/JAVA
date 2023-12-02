@@ -1,0 +1,15 @@
+package Client;
+
+import BL.Car;
+import BL.color;
+
+public class tester_car {
+
+	public static void main(String[] args) {
+			
+		Car c1=new Car("DODGE", color.red , 7500000);
+		System.out.println(c1);
+
+	}
+
+}

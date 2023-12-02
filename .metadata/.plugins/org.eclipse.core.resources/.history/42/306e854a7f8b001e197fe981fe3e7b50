@@ -1,0 +1,69 @@
+package BL;
+
+public class Car {
+
+	// id,name,color,price
+	private String name;
+	private colour car_colour;
+	private double price;
+	private static int id;
+	public int id_1;
+	private static double discount;
+
+	static {
+		id = 10;
+		discount = 20;
+
+	}
+
+	public Car() 
+	{
+		super();
+		name = "NANO";
+		price = 150000;
+		id_1 = id++;
+
+	}
+
+	public Car(String name, colour car_colour, double price)
+	{
+		super();
+		this.name = name;
+		this.car_colour = car_colour;
+		this.price = price;
+		id_1=id++;
+	}
+	
+	private double disprice()
+	{
+		price+=price*0.2;
+		return price;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [name=" + name + ", car_colour=" + car_colour + ", price=" + price + ", id_1=" + id_1 + "]";
+	}
+	
+	
+	
+	
+	
+
+}

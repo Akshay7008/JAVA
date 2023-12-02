@@ -1,0 +1,43 @@
+package com.map;
+
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class testerbookmap {
+
+	public static void main(String[] args) {
+
+		Map<Integer, bookmap> objm = new HashMap<Integer, bookmap>();
+
+		objm.put(101, new bookmap(101, "Linux", "pocketbook", 500));
+		objm.put(102, new bookmap(102, "Sql", "pldjk", 1500));
+		objm.put(103, new bookmap(103, "Java", "lkasd", 5500));
+		objm.put(104, new bookmap(104, "datavizulization", "awdk", 2500));
+
+//		System.out.println(objm);
+
+		objm.remove(104);
+
+		//Set<Integer> setobj = new HashMap().keySet();
+		//Set<Integer> setobj = objm.keySet();
+		for (int i : objm.keySet()) {
+			bookmap objb1 = objm.get(i);
+			if (objb1.getBookname().contains("S"))
+				System.out.println(objm.get(i));
+		}
+
+//		for (int i:objm.keySet())
+//		{
+//			if(objm.get(i).getBookname().equals("Sql"))
+//				System.out.println(objm.get(i));
+//		}
+		
+		
+		
+		
+	}
+
+}

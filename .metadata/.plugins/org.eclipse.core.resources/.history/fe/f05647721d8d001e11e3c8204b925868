@@ -1,0 +1,12 @@
+package Interface;
+
+public class employee implements printable {
+
+	@Override
+	public void print() 
+	{
+		System.out.println("print of prinable kanhl");
+		
+	}
+
+}

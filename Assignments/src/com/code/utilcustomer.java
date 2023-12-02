@@ -1,0 +1,23 @@
+package com.code;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.validation.Customervalidation;
+
+public class utilcustomer {
+	
+	public static List<Customer> getcustomerdetails ()
+	{
+		List<Customer> l1=new ArrayList<Customer>();
+		
+		l1.add(new Customervalidation().createcustomer("Donald"	, "Bradman", "db@gmail.com", 50000));
+		l1.add(new Customervalidation().createcustomer("Aroan"	, "Smith", "as@gmail.com", 15000));
+		l1.add(new Customervalidation().createcustomer("Akshay"	, "Arora", "aa@gmail.com", 2000));
+		l1.add(new Customervalidation().createcustomer("Omkar"	, "washiton", "owia@gmail.com", 3000));
+		l1.add(new Customervalidation().createcustomer("alpha"	, "Henery", "rh@gmail.com", 7000));
+		
+		return l1;
+	}
+
+}

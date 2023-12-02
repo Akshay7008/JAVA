@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;BL.p1&apos; to &apos;Employee&apos;&#x0D;&#x0A;- Original project: &apos;Inhiertance_Upcasting_Downcasting&apos;&#x0D;&#x0A;- Original element: &apos;BL.p1&apos;&#x0D;&#x0A;- Renamed element: &apos;BL.Employee&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;p1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;BL{p1.java[p1" matchStrategy="1" name="Employee" qualified="false" references="true" similarDeclarations="false" stamp="1700975330431" textual="false" version="1.0"/>
+</session>

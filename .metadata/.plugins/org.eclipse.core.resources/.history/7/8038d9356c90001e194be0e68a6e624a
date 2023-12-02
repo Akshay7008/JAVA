@@ -1,0 +1,22 @@
+package com.code;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.validation.custexception;
+
+public class Testercust {
+
+	public static void main(String[] args) {
+
+		List<Customer> a=new ArrayList<Customer>();
+		a=utilcustomer.getcustomerdetails();
+		
+		for (Customer n:a)
+		{
+			System.out.println(n);
+		}
+		
+	}
+
+}

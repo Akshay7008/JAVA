@@ -1,0 +1,15 @@
+package com.code;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class utilcustomer {
+	
+	public static List<Customer> getcustomerdetails ()
+	{
+		List<Customer> l1=new ArrayList<Customer>();
+		l1.add(new Customer("Tom", "Talyor", "tt@gmail.com", 50000));
+		return l1;
+	}
+
+}

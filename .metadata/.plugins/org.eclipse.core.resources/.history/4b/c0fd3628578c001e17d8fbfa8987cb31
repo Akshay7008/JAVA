@@ -1,0 +1,12 @@
+package com.app.fruits;
+
+public class tester_basket {
+
+	public static void main(String[] args) {
+		
+		mango m1=new mango("Yellow", 500, true);
+		System.out.println(m1);
+
+	}
+
+}

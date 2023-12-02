@@ -1,0 +1,12 @@
+package BL.payroll;
+
+import java.security.MessageDigest;
+
+public class Payroll_exception extends Exception{
+	
+	public Payroll_exception(String msg)
+	{
+		super(message);
+	}
+
+}

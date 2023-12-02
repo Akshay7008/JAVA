@@ -1,0 +1,11 @@
+package Interface;
+
+public class tester_interface {
+
+	public static void main(String[] args) {
+		
+		Shape objs=new Shape() 
+
+	}
+
+}

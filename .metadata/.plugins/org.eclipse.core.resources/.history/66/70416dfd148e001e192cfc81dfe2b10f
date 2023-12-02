@@ -1,0 +1,14 @@
+package Client;
+
+import BL.payroll.Payroll_date;
+
+public class Payroll_tester {
+
+	public static void main(String[] args) {
+		
+		Payroll_date b1=new Payroll_date("Smith","saving", 50000, 25-2-2001);
+		System.out.println(b1);
+
+	}
+
+}

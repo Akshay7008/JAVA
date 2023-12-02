@@ -1,0 +1,17 @@
+package com.code;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class utilproduct {
+	
+
+	
+	public static List<Product> getproducts()
+	{
+		List<Product> prdlist=new ArrayList<Product>();
+		prdlist.add(new Product(0, null, 0, null, null));
+		return List;
+	}
+
+}

@@ -1,0 +1,20 @@
+package Book_list;
+
+import java.util.Comparator;
+import Book_list.List_book;
+public class sortbyname  implements Comparator<List_book>
+{
+
+	
+
+	@Override
+	public int compare(List_book o1, List_book o2) {
+		if(o1.getBookname().compareTo(o2.getBookname())== 0)
+			return -1;
+		else
+			return 1;
+	}
+
+	
+	}
+	

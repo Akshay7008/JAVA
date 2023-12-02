@@ -1,0 +1,46 @@
+package BL.payroll;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Payroll_date {
+	private int actid;
+	private static int id;
+	private String name;
+	private accounttype typeact;
+	private double balance;
+	private Date dob;
+	private static SimpleDateFormat sdf;
+
+	static {
+		id = 1001;
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-mm-yyyy");
+	}
+
+	public Payroll_date(String name, String typeact, double balance, Date dob) 
+	{
+		this.actid=id;
+		id++;
+		this.name = name;
+		this.typeact = accounttype.valueOf(typeact);
+		this.balance = balance;
+		this.dob = dob;
+	}
+
+	public void withdraw(double amount)
+	{
+		balance-=amount;
+		System.out.println("reaming balance: "balance);
+	}
+	
+	public void deposit(double amount)
+	{
+		balance+=amount;
+		System.out.println("reaming balance: "balance);
+	}
+	
+	
+	
+	
+
+}

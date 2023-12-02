@@ -1,0 +1,33 @@
+package com.app.fruits;
+
+public class mango extends fruits {
+	
+	
+	
+
+	
+	public mango()
+	{
+		super();
+	}
+	
+	public mango(String name,String color,double weight,boolean fresh)
+	{
+		
+	}
+	
+	
+	
+	public void pulp()
+	{
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+}
